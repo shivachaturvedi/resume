@@ -12,6 +12,7 @@
 \usepackage{fancyhdr}
 \usepackage[svgnames]{xcolor}
 \usepackage{hyperref}
+\usepackage{titlesec}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -30,7 +31,7 @@
     colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,      
-    urlcolor=ForestGreen,
+    urlcolor=blue,
 }
 \urlstyle{same}
 
@@ -41,8 +42,10 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\color{MediumBlue}
+  \vspace{-4pt}\scshape\raggedright\large\color{Black}
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\titlespacing*{\section}{0pt}{0.1\baselineskip}{\baselineskip}
 
 %-------------------------
 % Custom commands
@@ -79,7 +82,9 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\Large Shiva Harshvardhan Chaturvedi} & Email : \href{mailto:shiva.chaturvedi@gmail.com}{shiva.chaturvedi@gmail.com}\\
-  {\href{https://www.linkedin.com/in/shivachaturvedi} {LinkedIn} | Available: March 2018 onwards} & Mobile : +1-980-349-3500 \\
+  {\href{https://www.linkedin.com/in/shivachaturvedi} {linkedin.com/in/shivachaturvedi} | Available: March 2018 onwards} & Mobile : +1-980-349-3500 \\ & 
+  {\href{https://www.github.com/shivachaturvedi} {github.com/shivachaturvedi}}
+  
 \end{tabular*}
 
 %-----------EDUCATION-----------------
@@ -96,27 +101,33 @@
       {Advanced Bachelor of Science in Information Technology}{Aug. 2006 -- Jul. 2009}
   \resumeSubHeadingListEnd
 
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+   
+      \resumeSubItem{Languages}{: Java, Python, Javascript, ES6, R, Racket, C, C++, Ruby, SQL, Processing, HTML, CSS3}
+      \hfill
+    
+      \resumeSubItem{Technologies}{: AWS (EC2, S3, VPC, Lambda, DynamoDB, Redshift), Angular, React, Redux, Reselect, Sagas, Rails, Servlets, JSP, Wordpress, Bootstrap, Backbone.js, Express.js, jQuery, AJAX, SOAP, REST, HighCharts, D3.js, Node.js Processing.js, Moment.js, EJS, Gulp, Docker, Loopback, NoSQL, MongoDB, Mocha, Jest}
+    
+  \resumeSubHeadingListEnd
 
+%
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {Northeastern University}{Boston, MA}
-      {Teaching Assistant}{Jan. 2017 - Jun. 2017, Sept. 2017 - Dec. 2017}
-      \resumeItemListStart
-        \resumeItem{Introduction to Computer Science}
-          {Provided teaching assistance, grading and doubt solving sessions to Web Development and Computer Science Boot camp students}
-      \resumeItemListEnd
 
     \resumeSubheading
       {Turbonomic Inc.}{Boston, MA}
       {Software Engineer Intern}{Jul 2017 - Aug 2017}
       \resumeItemListStart
         \resumeItem{Data Warehouse}
-          {Setup a data warehouse on Amazon Redshift to periodically collect Salesforce, JIVE and product data for statistical analysis}
-        \resumeItem{Back-end Development}
-          {Implemented features for website back-end using PHP, Grunt and Gulp.}
+          {Setup a data warehouse on Amazon Redshift and wrote a Nodejs module to periodically collect Salesforce, JIVE and product data for statistical analysis using Tableau.}
+        \resumeItem{Filter Implementation}
+          {Implemented a feature to block trial downloads of multiple registrations from the same company.}
+        \resumeItem{Back-end Management}
+        {Responsible for management of website back-end using PHP, Grunt and Gulp.}
+        
       \resumeItemListEnd
 
     \resumeSubheading
@@ -124,15 +135,17 @@
       {Cloud Software Engineer Intern}{Oct. 2016 - Dec. 2016}
       \resumeItemListStart
         \resumeItem{Policy Admin Portal}
-          {Implemented an Angular 2, AWS Lambda, Dynamo DB module to integrate Policy Admin Portal with Milliman API and visualize medical history data.}
+          {Implemented an Angular 2, AWS Lambda, Dynamo DB module to integrate Policy Admin Portal with Milliman API for background checks of policy applicants.}
+        \resumeItem{Data Visualization}
+          {Developed visualization component for visualizing medical history data of the applicant.}
     \resumeItemListEnd
     
     \resumeSubheading
       {Centre for Development of Advanced Computing }{Mumbai, India}
       {Senior Technical Associate}{Sept. 2011 - Dec. 2014}
       \resumeItemListStart
-        \resumeItem{\href{https://www.olabs.edu.in} {Online Labs}}
-          {Implemented Java, EJS simulations of Physics Laboratory Experiments.}
+        \resumeItem{\href{https://www.olabs.edu.in} {olabs.edu.in}}
+          {Implemented 8 Java, EJS simulations of Physics Laboratory Experiments for CBSE schools}
         \resumeItem{JavaScript Simulation API}
           {Implemented a JavaScript simulation library for OLabs front-end.}
         \resumeItem{Continuous and Comprehensive Evaluation System}
@@ -142,7 +155,7 @@
 
 %-----------PROJECTS-----------------
 \section{Projects}
-  \resumeSubHeadingListStart
+  \resumeSubHeadingListStart 
     \resumeSubItem{Visualization of DNSSEC Resolvers}
       {A choropleth map with summary tables and histograms to visualize DNSSEC support worldwide, using d3.js, leaflet.js, GeoLite2 and OpenStreetMap. \href{http://ec2-13-59-150-114.us-east-2.compute.amazonaws.com:3000/} {(Demo)} \href{https://drive.google.com/drive/folders/1Oc6g4fNo4LQgKQe8uxul2HIDKMQ-hzQZ/} {(Paper)} \href{https://github.com/shivachaturvedi/dnssec-viz} {(Github)}}
     \resumeSubItem{Velo - Pacific Northwest National Laboratory}
@@ -158,21 +171,12 @@
   \resumeSubHeadingListEnd
 
 %
-%--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
-  \resumeSubHeadingListStart
-   
-      \resumeSubItem{Languages}{: Java, Python, Javascript, ES6, R, Racket, C, C++, Ruby, SQL, Processing, HTML, CSS3}
-      \hfill
-    
-      \resumeSubItem{Technologies}{: AWS (EC2, S3, VPC, Lambda, DynamoDB, Redshift), Angular, React, Redux, Reselect, Sagas, Rails, Servlets, JSP, Wordpress, Bootstrap, Backbone.js, Express.js, jQuery, AJAX, SOAP, REST, HighCharts, D3.js, Node.js Processing.js, Moment.js, EJS, Gulp, Docker, Loopback, NoSQL, MongoDB, Mocha, Jest}
-    
-  \resumeSubHeadingListEnd
 
-%
 %--------AREAS OF INTEREST------------
 \section{Areas Of Interest}
 {Data Visualization | HCI | Data Mining | Machine Learning | Empirical Research Methods | Program Paradigm and Design | Statistical Modelling}
-
+\titlespacing*{\section}{0.1pt}{0.7\baselineskip}{\baselineskip}
+\section{Achievements}
+{Founder of \href{https://facebook.com/ifpixelscouldtalk}{Ifpixelscouldtalk}, a creative photography service with over 5000 followers and 50+ professional shoots.}
 %-------------------------------------------
 \end{document}
