@@ -1,5 +1,6 @@
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,9pt]{article}
+
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -25,7 +26,7 @@
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\textheight}{0.5in}
 
 \hypersetup{
     colorlinks=true,
@@ -42,7 +43,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\color{Black}
+  \vspace{0pt}\scshape\raggedright\large\color{Black}
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 \titlespacing*{\section}{0pt}{0.1\baselineskip}{\baselineskip}
@@ -80,12 +81,14 @@
 \begin{document}
 
 %----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large Shiva Harshvardhan Chaturvedi} & Email : \href{mailto:shiva.chaturvedi@gmail.com}{shiva.chaturvedi@gmail.com}\\
-  {\href{https://www.linkedin.com/in/shivachaturvedi} {linkedin.com/in/shivachaturvedi} | Available: March 2018 onwards} & Mobile : +1-980-349-3500 \\ & 
-  {\href{https://www.github.com/shivachaturvedi} {github.com/shivachaturvedi}}
-  
-\end{tabular*}
+
+
+\centering % centering table
+\begin{tabular}{c} % creating eight columns
+\textbf{\Large Shiva Harshvardhan Chaturvedi}\\
+Email : \href{mailto:shiva.chaturvedi@gmail.com}{shiva.chaturvedi@gmail.com} | Mobile : +1-980-349-3500 \\
+  {\href{https://www.linkedin.com/in/shivachaturvedi} {linkedin.com/in/shivachaturvedi} } | {\href{https://www.github.com/shivachaturvedi} {github.com/shivachaturvedi}} \\ Available April 2018 on-wards
+\end{tabular}
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -105,10 +108,10 @@
 \section{Programming Skills}
   \resumeSubHeadingListStart
    
-      \resumeSubItem{Languages}{: Java, Python, Javascript, ES6, R, Racket, C, C++, Ruby, SQL, Processing, HTML, CSS3}
+      \resumeSubItem{Languages}{: Java, Python, Javascript, ES6, R, Racket, C, C++, Ruby, SQL, Processing, HTML, CSS}
       \hfill
     
-      \resumeSubItem{Technologies}{: AWS (EC2, S3, VPC, Lambda, DynamoDB, Redshift), Angular, React, Redux, Reselect, Sagas, Rails, Servlets, JSP, Wordpress, Bootstrap, Backbone.js, Express.js, jQuery, AJAX, SOAP, REST, HighCharts, D3.js, Node.js Processing.js, Moment.js, EJS, Gulp, Docker, Loopback, NoSQL, MongoDB, Mocha, Jest}
+      \resumeSubItem{Technologies}{: AWS (EC2, S3, VPC, Lambda, DynamoDB, Redshift), Angular, React, Redux, Reselect, Sagas, Rails, Servlets, JSP, Wordpress, Bootstrap, Backbone.js, Express.js, jQuery, AJAX, SOAP, REST, HighCharts, D3.js, Node.js Processing.js, Moment.js, EJS, Gulp, Docker, Loopback, NoSQL, MongoDB, Mocha, Jest, Git}
     
   \resumeSubHeadingListEnd
 
@@ -122,11 +125,12 @@
       {Software Engineer Intern}{Jul 2017 - Aug 2017}
       \resumeItemListStart
         \resumeItem{Data Warehouse}
-          {Setup a data warehouse on Amazon Redshift and wrote a Nodejs module to periodically collect Salesforce, JIVE and product data for statistical analysis using Tableau.}
+          {Inserted 17 million records, set-up from scratch, a data warehouse on AWS Redshift and wrote a Nodejs module to periodically collect Salesforce, JIVE and product data for statistical analysis using Tableau.}
+        \resumeItem{Setup and Automation}
+          {Implemented independent sub-modules for Data Extraction, Data Transformation, Data Aggregation and Summary Tables to facilitate data analysis and visualization using Tablaeu.}
         \resumeItem{Filter Implementation}
-          {Implemented a feature to block trial downloads of multiple registrations from the same company.}
-        \resumeItem{Back-end Management}
-        {Responsible for management of website back-end using PHP, Grunt and Gulp.}
+          {A feature to block trial downloads of multiple registrations from the same company.}
+
         
       \resumeItemListEnd
 
@@ -134,10 +138,12 @@
       {New York Life Insurance Company }{New York City, NY}
       {Cloud Software Engineer Intern}{Oct. 2016 - Dec. 2016}
       \resumeItemListStart
-        \resumeItem{Policy Admin Portal}
-          {Implemented an Angular 2, AWS Lambda, Dynamo DB module to integrate Policy Admin Portal with Milliman API for background checks of policy applicants.}
         \resumeItem{Data Visualization}
           {Developed visualization component for visualizing medical history data of the applicant.}
+        \resumeItem{API Integration}
+          {Implemented an Angular 2 module to integrate Policy Admin Portal with Milliman API for health background checks.}
+        \resumeItem{AWS Lambda}
+          {Implemented a Lambda function to handshake and fetch medical history data from Milliman API, of a Policy applicant and push it to Dynamo DB.}
     \resumeItemListEnd
     
     \resumeSubheading
@@ -145,38 +151,42 @@
       {Senior Technical Associate}{Sept. 2011 - Dec. 2014}
       \resumeItemListStart
         \resumeItem{\href{https://www.olabs.edu.in} {olabs.edu.in}}
-          {Implemented 8 Java, EJS simulations of Physics Laboratory Experiments for CBSE schools}
+          {Implemented 8 Java, EJS simulations of Physics Laboratory Experiments for CBSE school students. Being used in over 1550 schools with 186876 students}
+
         \resumeItem{JavaScript Simulation API}
-          {Implemented a JavaScript simulation library for OLabs front-end.}
+          {Implemented a JavaScript simulation library for OLabs front-end to customize the presentation layer for any simulation to suit the teaching style of each teacher.}
         \resumeItem{Continuous and Comprehensive Evaluation System}
-          {Implemented student performance analysis module using Groovy on Grails}
+          {Implemented student performance analysis module using Groovy on Grails to detect outliers in student performance and push notifications.}
+ 
     \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart 
-    \resumeSubItem{Visualization of DNSSEC Resolvers}
+    \resumeSubItem{Data Visualization of DNSSEC Resolvers}
       {A choropleth map with summary tables and histograms to visualize DNSSEC support worldwide, using d3.js, leaflet.js, GeoLite2 and OpenStreetMap. \href{http://ec2-13-59-150-114.us-east-2.compute.amazonaws.com:3000/} {(Demo)} \href{https://drive.google.com/drive/folders/1Oc6g4fNo4LQgKQe8uxul2HIDKMQ-hzQZ/} {(Paper)} \href{https://github.com/shivachaturvedi/dnssec-viz} {(Github)}}
-    \resumeSubItem{Velo - Pacific Northwest National Laboratory}
-      {Implemented the Team Management module, a React, Redux application powered by REST APIs through AWS Lambda.\href{https://github.com/VeloCloud/website-ui}{(Github)}}
+        \resumeItemListStart
+            \resumeItem{Choropleth Map}{Visualization used in a research project to access the changing landscape of global DNSSEC support.}
+        \resumeItemListEnd
+    \resumeSubItem{Velo - Pacific Northwest National Laboratory}{\textit{Large scientific datasets}, sharing management tool on the cloud}
+        \resumeItemListStart
+            \resumeItem{Agile Development}{Collaborated across multiple timezones on distributed agile team of 24 members}
+            \resumeItem{Team Management}{{Implemented, a React, Redux application powered by REST APIs through AWS Lambda.\href{https://github.com/VeloCloud/website-ui}{(Github)}}}
+        \resumeItemListEnd
     \resumeSubItem{iLike}
       {A Ruby on Rails application using Eventful, for personalized notifications of social events in proximity.\href{https://github.com/shivachaturvedi/iLike}{(Github)}}
-    \resumeSubItem{Weather Forecast App}
-      {A weather forecast app with trend visualization, using React, Google Charts.\href{https://github.com/shivachaturvedi/ReduxWeatherForecast}{(Github)}}
-    \resumeSubItem{Tower Defense Game}
-      {Tower Defense Game: A sophisticated shooting game implemented in Racket.\href{https://course.ccs.neu.edu/cs5010sp15/set13.html}{(more)}}
-    \resumeSubItem{Simulation of Virtual Memory using Simple Paging Technique}
-      {Simulation of Virtual Memory Management (Page Replacement Algorithms: LRU, LFU, FIFO and Priority Queue) using C.\href{https://github.com/shivachaturvedi/VirtualMemorySimulation}{(Github)}}
+        \resumeItemListStart
+            \resumeItem{User Preference Profile}{User can customize his/her profile for changing preferences and will be notified accordingly of any relevant social events in the area.}
+        \resumeItemListEnd
+    
   \resumeSubHeadingListEnd
 
 %
 
-%--------AREAS OF INTEREST------------
-\section{Areas Of Interest}
-{Data Visualization | HCI | Data Mining | Machine Learning | Empirical Research Methods | Program Paradigm and Design | Statistical Modelling}
-\titlespacing*{\section}{0.1pt}{0.7\baselineskip}{\baselineskip}
+%
 \section{Achievements}
 {Founder of \href{https://facebook.com/ifpixelscouldtalk}{Ifpixelscouldtalk}, a creative photography service with over 5000 followers and 50+ professional shoots.}
-%-------------------------------------------
+
+%
 \end{document}
