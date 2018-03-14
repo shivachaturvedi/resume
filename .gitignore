@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 *.aux
 *.out
 *.log
+=======
+*.log
+*.out
+*.aux
+>>>>>>> 447791f3820072ad2559e341b40fc09ab4aaa91e
