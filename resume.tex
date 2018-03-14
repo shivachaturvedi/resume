@@ -11,7 +11,6 @@
 \usepackage{fancyhdr}
 \usepackage[svgnames]{xcolor}
 \usepackage{hyperref}
-
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -45,11 +44,14 @@
 
 %-------------------------
 % Custom commands
+
 \newcommand{\resumeItem}[2]{
   \item\small{
-    {#1}{: #2 \vspace{-2pt}}
+    {\emph{\color{Gray}#1}}{: #2 \vspace{-2pt}}
   }
 }
+
+
 
 \newcommand{\resumeItemNoBF}[2]{
   \item\small{
@@ -105,6 +107,7 @@
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
+
 \resumeSubHeadingListStart
 
 \resumeSubheading
@@ -150,9 +153,7 @@
 \resumeSubHeadingListStart
 \resumeSubItem{Data Visualization of DNSSEC Resolvers}
       {A choropleth map with summary tables and histograms to visualize DNSSEC support worldwide, using d3.js, leaflet.js, GeoLite2 and OpenStreetMap. \href{http://ec2-13-59-150-114.us-east-2.compute.amazonaws.com:3000/} {(Demo)} \href{https://drive.google.com/drive/folders/1Oc6g4fNo4LQgKQe8uxul2HIDKMQ-hzQZ/} {(Paper)} \href{https://github.com/shivachaturvedi/dnssec-viz} {(Github)}}
-        \resumeItemListStart
-            \resumeItemNoBF{Choropleth Map}{Used in a research project to access the changing landscape of global DNSSEC support.}
-        \resumeItemListEnd
+
      \resumeSubItem{Velo - Pacific Northwest National Laboratory}{\textit{Large scientific datasets}, sharing management tool on the cloud}
         \resumeItemListStart
             \resumeItemNoBF{Agile Development}{Collaborated across multiple timezones on distributed agile team of 24 members}
@@ -167,12 +168,10 @@
 %--------PROGRAMMING SKILLS------------
 \section{Programming Skills}
 \resumeSubHeadingListStart
-   
+
 \resumeSubItem{Languages}{: Java, Python, Javascript, ES6, R, Racket, C, Ruby, SQL, Processing, HTML, CSS3}
-\hfill
-    
+
 \resumeSubItem{Technologies}{: AWS (EC2, S3, VPC, Lambda, DynamoDB, Redshift), Angular, React, Redux, Reselect, Sagas, Rails, Servlets, JSP, Wordpress, jQuery, HighCharts, D3.js, Node.js Processing.js, Moment.js, EJS, Gulp, Docker, Loopback, Google Tag Manager, MongoDB, Mocha, Jest, Git}
-    
 \resumeSubHeadingListEnd
 
 %
